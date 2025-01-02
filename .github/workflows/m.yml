@@ -3,10 +3,10 @@ name: Demo Workflow
 on:      #trigger
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - mas
+      - main
 
 env:  
   VAR: 'This is global'
