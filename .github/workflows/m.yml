@@ -1,0 +1,20 @@
+name: Demo Workflow
+
+on:      #trigger
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - mas
+
+env:  
+  VAR: 'This is global'
+jobs:
+    build:
+      runs-on: ubuntu-latest    #one vm
+      
+      steps:
+    #step1
+        - name: checkout the repo
+          uses: actions/checkout@v2
